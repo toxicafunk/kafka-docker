@@ -2,6 +2,12 @@ FROM anapsix/alpine-java
 
 MAINTAINER Wurstmeister
 
+ENV HTTP_PROXY http://T0000104:12345678@proxycorp.geci:8080/
+ENV HTTPS_PROXY http://T0000104:12345678@proxycorp.geci:8080/
+ENV FTP_PROXY http://T0000104:12345678@proxycorp.geci:8080/
+
+ENV DOCKER_API_VERSION 1.22
+
 RUN apk add --update unzip wget curl docker jq coreutils
 
 ENV KAFKA_VERSION="0.10.1.0" SCALA_VERSION="2.11"
