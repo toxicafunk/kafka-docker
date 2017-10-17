@@ -2,11 +2,13 @@ FROM anapsix/alpine-java
 
 MAINTAINER Wurstmeister
 
-ENV HTTP_PROXY http://T0000104:12345678@proxycorp.geci:8080/
-ENV HTTPS_PROXY http://T0000104:12345678@proxycorp.geci:8080/
-ENV FTP_PROXY http://T0000104:12345678@proxycorp.geci:8080/
+ENV HTTP_PROXY http://J1457453:m1234567@bcproxyweb.es.wcorp.carrefour.com:8080/
+ENV HTTPS_PROXY http://J1457453:m1234567@bcproxyweb.es.wcorp.carrefour.com:8080/
+ENV FTP_PROXY http://J1457453:m1234567@bcproxyweb.es.wcorp.carrefour.com:8080/
 
 ENV DOCKER_API_VERSION 1.22
+
+RUN echo $HTTP_PROXY
 
 RUN apk add --update unzip wget curl docker jq coreutils
 
