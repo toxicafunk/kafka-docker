@@ -5,10 +5,6 @@ ARG scala_version=2.12
 
 MAINTAINER wurstmeister
 
-ENV HTTP_PROXY http://J1457453:m1234567@bcproxyweb.es.wcorp.carrefour.com:8080/
-ENV HTTPS_PROXY http://J1457453:m1234567@bcproxyweb.es.wcorp.carrefour.com:8080/
-ENV FTP_PROXY http://J1457453:m1234567@bcproxyweb.es.wcorp.carrefour.com:8080/
-
 ENV DOCKER_API_VERSION 1.22
 
 RUN echo $HTTP_PROXY
